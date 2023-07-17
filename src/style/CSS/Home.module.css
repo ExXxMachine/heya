@@ -1,0 +1,46 @@
+* {
+  font-family: "Open Sans", sans-serif;
+  font-size: calc(20px + 0.6944444444vw);
+}
+
+.home__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 90vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../images/HomeBG.png");
+}
+
+input {
+  width: 40%;
+  height: 6%;
+  border-radius: 10px;
+  border: none;
+  background: url("../images/search.png") no-repeat left #FFFFFF;
+  background-position-x: 5px;
+}
+
+input:focus {
+  background: #FFFFFF;
+}
+
+.title__home {
+  color: #FFFFFF;
+}
+
+footer {
+  font-size: 15px;
+}
