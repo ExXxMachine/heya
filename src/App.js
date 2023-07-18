@@ -1,18 +1,23 @@
 import './App.css';
 import {Route, Routes} from "react-router-dom"
-import {AuthorizationPage} from "./pages/AuthorizationPage"
 import {HomePage} from "./pages/HomePage"
 import {NewsPage} from "./pages/NewsPage"
 import {Layout} from "./components/Layout"
 import {InfoNews} from "./pages/InfoNews"
+import  {Profile} from "./components/Profile"
+import {Login} from "./components/Login"
+import {Registration} from "./components/Registration";
+
 function App() {
   return (
         <>
         <Routes>
             <Route path={"/"} element={<Layout/>}>
+                <Route path={"profile"} element={<Profile/>}/>
+                <Route path={"registration"} element={<Registration/>}/>
                 <Route index element={<HomePage/>}/>
+                <Route path={"login"} element={<Login/>}/>
                 <Route path={"news"} element={<NewsPage/>}/>
-                <Route path={"authorization"} element={<AuthorizationPage/>}/>
                 <Route path={"info"} element={<InfoNews/>}/>
             </Route>
         </Routes>

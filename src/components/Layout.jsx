@@ -11,10 +11,11 @@ const Layout = () => {
                 <Container>
                     <Row>
                         <Col xs={3} ><HandySvg src={logo} className={classes.logo__svg}/></Col>
-                        <Col xs={5}/>
+                        <Col xs={4}/>
                         <Col xs={1} className={"d-flex justify-content-center align-items-center"}><Link to={"/"} className={classes.link__layout}>Home</Link></Col>
                         <Col xs={1} className={"d-flex justify-content-center align-items-center"}><Link to={"/News"} className={classes.link__layout}>News</Link></Col>
-                        <Col xs={1} className={"d-flex justify-content-center align-items-center"}><Link to={"/authorization"} className={classes.link__layout}>Log in</Link></Col>
+                        <Col xs={1} className={"d-flex justify-content-center align-items-center"}><Link to={"/Login"} className={classes.link__layout}>Log in</Link></Col>
+                        <Col xs={1} className={"d-flex justify-content-center align-items-center"}><Link to={"/Profile"} className={classes.link__layout}>Profile</Link></Col>
                     </Row>
                 </Container>
             </header>

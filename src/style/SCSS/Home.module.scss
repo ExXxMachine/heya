@@ -17,15 +17,15 @@ $border: 10px;
   background-image: url("../images/HomeBG.png");
 }
 
-input{
-  width: 40%;
-  height: 6%;
-
-  border-radius: $border;
-  border: none;
-  background: url("../images/search.png") no-repeat left  $colorW;
-  background-position-x: 5px;
-}
+//input{
+//  width: 40%;
+//  height: 6%;
+//
+//  border-radius: $border;
+//  border: none;
+//  background: url("../images/search.png") no-repeat left  $colorW;
+//  background-position-x: 5px;
+//}
 input:focus{
   background: $colorW;
 }
