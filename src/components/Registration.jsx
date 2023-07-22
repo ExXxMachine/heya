@@ -1,22 +1,17 @@
 import classes from "../style/CSS/Registrarion.module.css"
-import {useEffect, useRef, useState} from "react";
+import {useRef} from "react";
+import {useNavigate} from "react-router-dom";
+
 
 const Registration = () =>{
     const loginRef = useRef(null);
     const passwordRef = useRef(null);
-
-
+    const navigate = useNavigate();
     function handleClick() {
         localStorage.setItem(loginRef.current.value,JSON.stringify(passwordRef.current.value));
+        navigate("/login");
     }
-    // const [data, setData] = useLocalStorage([], "data");
-    // const addData = () => {
-    //     const newData = {
-    //         login:loginRef.current.value,
-    //         password:passwordRef.current.value,
-    //     }
-    //     setData([...data, newData]);
-    // }
+
     return(
         <div className={classes.registration__body}>
             registration

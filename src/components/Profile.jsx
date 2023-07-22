@@ -9,6 +9,7 @@ const Profile = () => {
     const dispatch = useDispatch();
     const logoutFunc = () =>{
         dispatch(logout({name:"",}))
+        localStorage.setItem("flag",JSON.stringify(false));
         navigate("/login")
     }
     return(

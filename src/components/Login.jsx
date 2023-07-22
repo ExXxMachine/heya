@@ -4,6 +4,7 @@ import {Link} from "react-router-dom"
 import {useRef, useState} from "react";
 import { useNavigate } from "react-router-dom";
 
+
 const Login = () => {
     const [errorMess, setErrorMess] = useState();
     const navigate = useNavigate();
@@ -20,12 +21,14 @@ const Login = () => {
             if("\"" + passwordRef.current.value + "\"" == storage){
                 dispatch((login({name:loginRef.current.value,})));
                 console.log(user.name);
+                localStorage.setItem("flag",JSON.stringify(true));
                 navigate("/profile");
             }else{
                 notValid();
                 console.log("error");
             }
         }else{
+            notValid();
             console.log("error");
         }
     }

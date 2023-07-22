@@ -7,13 +7,16 @@ import {InfoNews} from "./pages/InfoNews"
 import  {Profile} from "./components/Profile"
 import {Login} from "./components/Login"
 import {Registration} from "./components/Registration";
+import {PrivateRoute} from "./features/router/PrivateRoute";
 
 function App() {
   return (
         <>
         <Routes>
             <Route path={"/"} element={<Layout/>}>
-                <Route path={"profile"} element={<Profile/>}/>
+                <Route element={<PrivateRoute/>}>
+                    <Route path={"profile"} element={<Profile/>}/>
+                </Route>
                 <Route path={"registration"} element={<Registration/>}/>
                 <Route index element={<HomePage/>}/>
                 <Route path={"login"} element={<Login/>}/>

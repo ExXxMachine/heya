@@ -1,6 +1,6 @@
 const InfoNews = () =>{
     return(
-        <div>boba</div>
+        <div>textContent</div>
     )
 }
 export {InfoNews};
