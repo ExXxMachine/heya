@@ -1,5 +1,5 @@
 .news__block {
-  width: 70vw;
+  width: 65vw;
   height: 30vh;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -10,6 +10,11 @@
   border-radius: 10px;
   margin: 3% 0 3% 15%;
   background-color: #ffffff;
+}
+
+img {
+  height: 100%;
+  width: 50%;
 }
 
 .h2 {
@@ -43,6 +48,7 @@
 }
 
 .news__body {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
